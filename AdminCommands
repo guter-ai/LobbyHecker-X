@@ -1,13 +1,13 @@
--- LobbyHecker X
--- Made By: guter#8664 & faintah#3616
--- Credits For Gui: $xn Zaxx-#1000
+-- Gui to Lua
+-- Version: 3.2
 
--- Updates Every Week
+-- Instances:
 
 local ScreenGui = Instance.new("ScreenGui")
-local ScrollingFrame = Instance.new("ScrollingFrame")
+local HackGui = Instance.new("ScrollingFrame")
 local TextLabel = Instance.new("TextLabel")
 local TextLabel_2 = Instance.new("TextLabel")
+local TextButton = Instance.new("TextButton")
 local TextLabel_3 = Instance.new("TextLabel")
 local TextLabel_4 = Instance.new("TextLabel")
 local TextLabel_5 = Instance.new("TextLabel")
@@ -39,32 +39,36 @@ local TextLabel_30 = Instance.new("TextLabel")
 local TextLabel_31 = Instance.new("TextLabel")
 local TextLabel_32 = Instance.new("TextLabel")
 local TextLabel_33 = Instance.new("TextLabel")
-local TextButton = Instance.new("TextButton")
 
 --Properties:
 
 ScreenGui.Parent = game.CoreGui
 ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+ScreenGui.ResetOnSpawn = false
 
-ScrollingFrame.Parent = ScreenGui
-ScrollingFrame.Active = true
-ScrollingFrame.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
-ScrollingFrame.BorderColor3 = Color3.fromRGB(255, 255, 255)
-ScrollingFrame.Position = UDim2.new(0.0259694047, 0, 0.568684816, 0)
-ScrollingFrame.Size = UDim2.new(0, 271, 0, 309)
+HackGui.Name = "HackGui"
+HackGui.Parent = ScreenGui
+HackGui.Active = true
+HackGui.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+HackGui.BackgroundTransparency = 0.150
+HackGui.BorderColor3 = Color3.fromRGB(255, 255, 255)
+HackGui.Position = UDim2.new(0.0171001144, 0, 0.609225333, 0)
+HackGui.Size = UDim2.new(0, 271, 0, 309)
 
-TextLabel.Parent = ScrollingFrame
+TextLabel.Parent = HackGui
 TextLabel.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+TextLabel.BackgroundTransparency = 0.150
 TextLabel.BorderColor3 = Color3.fromRGB(45, 45, 45)
 TextLabel.Position = UDim2.new(-0.00499998406, 0, 0, 0)
-TextLabel.Size = UDim2.new(0, 272, 0, 18)
+TextLabel.Size = UDim2.new(0, 235, 0, 18)
 TextLabel.Font = Enum.Font.GothamBold
 TextLabel.Text = "Credits : 3b1z / $xn Zaxx-"
 TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel.TextSize = 14.000
 
-TextLabel_2.Parent = ScrollingFrame
+TextLabel_2.Parent = HackGui
 TextLabel_2.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+TextLabel_2.BackgroundTransparency = 0.150
 TextLabel_2.BorderColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_2.Position = UDim2.new(0.485774904, 0, 0.0155518148, 0)
 TextLabel_2.Size = UDim2.new(0, 125, 0, 32)
@@ -73,8 +77,20 @@ TextLabel_2.Text = ";rj (rejoins game)"
 TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_2.TextSize = 14.000
 
-TextLabel_3.Parent = ScrollingFrame
+TextButton.Parent = HackGui
+TextButton.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+TextButton.BackgroundTransparency = 0.600
+TextButton.BorderColor3 = Color3.fromRGB(45, 45, 45)
+TextButton.Position = UDim2.new(0.86500001, 0, -0, 0)
+TextButton.Size = UDim2.new(0, 23, 0, 19)
+TextButton.Font = Enum.Font.SciFi
+TextButton.Text = "X"
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextSize = 14.000
+
+TextLabel_3.Parent = HackGui
 TextLabel_3.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+TextLabel_3.BackgroundTransparency = 0.150
 TextLabel_3.BorderColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_3.Position = UDim2.new(-0.00177490711, 0, 0.015393205, 0)
 TextLabel_3.Size = UDim2.new(0, 126, 0, 32)
@@ -83,18 +99,20 @@ TextLabel_3.Text = ";mute (mutes boombox)"
 TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_3.TextSize = 14.000
 
-TextLabel_4.Parent = ScrollingFrame
+TextLabel_4.Parent = HackGui
 TextLabel_4.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+TextLabel_4.BackgroundTransparency = 0.150
 TextLabel_4.BorderColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_4.Position = UDim2.new(-0.00200000033, 0, 0.0390582532, 0)
+TextLabel_4.Position = UDim2.new(0.00169003755, 0, 0.0384514555, 0)
 TextLabel_4.Size = UDim2.new(0, 126, 0, 32)
 TextLabel_4.Font = Enum.Font.SourceSans
 TextLabel_4.Text = ";antikill(Ppl cant kill you)"
 TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_4.TextSize = 14.000
 
-TextLabel_5.Parent = ScrollingFrame
+TextLabel_5.Parent = HackGui
 TextLabel_5.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+TextLabel_5.BackgroundTransparency = 0.150
 TextLabel_5.BorderColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_5.Position = UDim2.new(0.483394831, 0, 0.0388349481, 0)
 TextLabel_5.Size = UDim2.new(0, 126, 0, 32)
@@ -103,8 +121,9 @@ TextLabel_5.Text = ";noclip "
 TextLabel_5.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_5.TextSize = 14.000
 
-TextLabel_6.Parent = ScrollingFrame
+TextLabel_6.Parent = HackGui
 TextLabel_6.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+TextLabel_6.BackgroundTransparency = 0.150
 TextLabel_6.BorderColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_6.Position = UDim2.new(0.0036900267, 0, 0.274650574, 0)
 TextLabel_6.Size = UDim2.new(0, 125, 0, 32)
@@ -113,8 +132,9 @@ TextLabel_6.Text = ";rhats (reset hats)"
 TextLabel_6.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_6.TextSize = 14.000
 
-TextLabel_7.Parent = ScrollingFrame
+TextLabel_7.Parent = HackGui
 TextLabel_7.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+TextLabel_7.BackgroundTransparency = 0.150
 TextLabel_7.BorderColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_7.Position = UDim2.new(0.483394831, 0, 0.110764869, 0)
 TextLabel_7.Size = UDim2.new(0, 126, 0, 32)
@@ -123,8 +143,9 @@ TextLabel_7.Text = ";dance2 (r15)"
 TextLabel_7.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_7.TextSize = 14.000
 
-TextLabel_8.Parent = ScrollingFrame
+TextLabel_8.Parent = HackGui
 TextLabel_8.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+TextLabel_8.BackgroundTransparency = 0.150
 TextLabel_8.BorderColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_8.Position = UDim2.new(2.04890966e-08, 0, 0.0878303796, 0)
 TextLabel_8.Size = UDim2.new(0, 126, 0, 32)
@@ -133,8 +154,9 @@ TextLabel_8.Text = ";givetool (hold tool)"
 TextLabel_8.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_8.TextSize = 14.000
 
-TextLabel_9.Parent = ScrollingFrame
+TextLabel_9.Parent = HackGui
 TextLabel_9.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+TextLabel_9.BackgroundTransparency = 0.150
 TextLabel_9.BorderColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_9.Position = UDim2.new(0, 0, 0.111000001, 0)
 TextLabel_9.Size = UDim2.new(0, 126, 0, 32)
@@ -143,8 +165,9 @@ TextLabel_9.Text = ";dance1 (r15)"
 TextLabel_9.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_9.TextSize = 14.000
 
-TextLabel_10.Parent = ScrollingFrame
+TextLabel_10.Parent = HackGui
 TextLabel_10.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+TextLabel_10.BackgroundTransparency = 0.150
 TextLabel_10.BorderColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_10.Position = UDim2.new(0.483394831, 0, 0.0876798183, 0)
 TextLabel_10.Size = UDim2.new(0, 126, 0, 32)
@@ -153,8 +176,9 @@ TextLabel_10.Text = ";to(player)"
 TextLabel_10.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_10.TextSize = 14.000
 
-TextLabel_11.Parent = ScrollingFrame
+TextLabel_11.Parent = HackGui
 TextLabel_11.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+TextLabel_11.BackgroundTransparency = 0.150
 TextLabel_11.BorderColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_11.Position = UDim2.new(0.483394861, 0, 0.0627340749, 0)
 TextLabel_11.Size = UDim2.new(0, 126, 0, 32)
@@ -163,8 +187,9 @@ TextLabel_11.Text = ";tbring (player)"
 TextLabel_11.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_11.TextSize = 14.000
 
-TextLabel_12.Parent = ScrollingFrame
+TextLabel_12.Parent = HackGui
 TextLabel_12.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+TextLabel_12.BackgroundTransparency = 0.150
 TextLabel_12.BorderColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_12.Position = UDim2.new(-1.67638063e-08, 0, 0.0631768703, 0)
 TextLabel_12.Size = UDim2.new(0, 126, 0, 32)
@@ -173,8 +198,9 @@ TextLabel_12.Text = ";tkill (must have tool)"
 TextLabel_12.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_12.TextSize = 14.000
 
-TextLabel_13.Parent = ScrollingFrame
+TextLabel_13.Parent = HackGui
 TextLabel_13.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+TextLabel_13.BackgroundTransparency = 0.150
 TextLabel_13.BorderColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_13.Position = UDim2.new(0.487084866, 0, 0.227465108, 0)
 TextLabel_13.Size = UDim2.new(0, 125, 0, 32)
@@ -183,8 +209,9 @@ TextLabel_13.Text = ";blackhole (press e)"
 TextLabel_13.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_13.TextSize = 14.000
 
-TextLabel_14.Parent = ScrollingFrame
+TextLabel_14.Parent = HackGui
 TextLabel_14.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+TextLabel_14.BackgroundTransparency = 0.150
 TextLabel_14.BorderColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_14.Position = UDim2.new(0.487084836, 0, 0.298188895, 0)
 TextLabel_14.Size = UDim2.new(0, 125, 0, 32)
@@ -193,8 +220,9 @@ TextLabel_14.Text = ";infjump (F to disable)"
 TextLabel_14.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_14.TextSize = 14.000
 
-TextLabel_15.Parent = ScrollingFrame
+TextLabel_15.Parent = HackGui
 TextLabel_15.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+TextLabel_15.BackgroundTransparency = 0.150
 TextLabel_15.BorderColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_15.Position = UDim2.new(0.0036900267, 0, 0.298270851, 0)
 TextLabel_15.Size = UDim2.new(0, 125, 0, 32)
@@ -203,8 +231,9 @@ TextLabel_15.Text = ";orbit2"
 TextLabel_15.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_15.TextSize = 14.000
 
-TextLabel_16.Parent = ScrollingFrame
+TextLabel_16.Parent = HackGui
 TextLabel_16.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+TextLabel_16.BackgroundTransparency = 0.150
 TextLabel_16.BorderColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_16.Position = UDim2.new(0.487084866, 0, 0.27447167, 0)
 TextLabel_16.Size = UDim2.new(0, 125, 0, 32)
@@ -213,8 +242,9 @@ TextLabel_16.Text = ";orbit"
 TextLabel_16.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_16.TextSize = 14.000
 
-TextLabel_17.Parent = ScrollingFrame
+TextLabel_17.Parent = HackGui
 TextLabel_17.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+TextLabel_17.BackgroundTransparency = 0.150
 TextLabel_17.BorderColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_17.Position = UDim2.new(0.487084866, 0, 0.250568062, 0)
 TextLabel_17.Size = UDim2.new(0, 125, 0, 32)
@@ -223,8 +253,9 @@ TextLabel_17.Text = ";visualizer"
 TextLabel_17.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_17.TextSize = 14.000
 
-TextLabel_18.Parent = ScrollingFrame
+TextLabel_18.Parent = HackGui
 TextLabel_18.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+TextLabel_18.BackgroundTransparency = 0.150
 TextLabel_18.BorderColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_18.Position = UDim2.new(0.00369003415, 0, 0.251122653, 0)
 TextLabel_18.Size = UDim2.new(0, 125, 0, 32)
@@ -233,8 +264,9 @@ TextLabel_18.Text = ";halo"
 TextLabel_18.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_18.TextSize = 14.000
 
-TextLabel_19.Parent = ScrollingFrame
+TextLabel_19.Parent = HackGui
 TextLabel_19.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+TextLabel_19.BackgroundTransparency = 0.150
 TextLabel_19.BorderColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_19.Position = UDim2.new(0.00369003415, 0, 0.227706596, 0)
 TextLabel_19.Size = UDim2.new(0, 125, 0, 32)
@@ -243,8 +275,9 @@ TextLabel_19.Text = ";antiafk"
 TextLabel_19.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_19.TextSize = 14.000
 
-TextLabel_20.Parent = ScrollingFrame
+TextLabel_20.Parent = HackGui
 TextLabel_20.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+TextLabel_20.BackgroundTransparency = 0.150
 TextLabel_20.BorderColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_20.Position = UDim2.new(0.483394831, 0, 0.203330413, 0)
 TextLabel_20.Size = UDim2.new(0, 125, 0, 32)
@@ -253,8 +286,9 @@ TextLabel_20.Text = ";add (spams chat)"
 TextLabel_20.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_20.TextSize = 14.000
 
-TextLabel_21.Parent = ScrollingFrame
+TextLabel_21.Parent = HackGui
 TextLabel_21.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+TextLabel_21.BackgroundTransparency = 0.150
 TextLabel_21.BorderColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_21.Position = UDim2.new(0.00369002204, 0, 0.203579381, 0)
 TextLabel_21.Size = UDim2.new(0, 125, 0, 32)
@@ -263,8 +297,9 @@ TextLabel_21.Text = ";chant (spams chat)"
 TextLabel_21.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_21.TextSize = 14.000
 
-TextLabel_22.Parent = ScrollingFrame
+TextLabel_22.Parent = HackGui
 TextLabel_22.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+TextLabel_22.BackgroundTransparency = 0.150
 TextLabel_22.BorderColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_22.Position = UDim2.new(0.487084866, 0, 0.180439129, 0)
 TextLabel_22.Size = UDim2.new(0, 125, 0, 32)
@@ -273,8 +308,9 @@ TextLabel_22.Text = ";fly (E to unfly)"
 TextLabel_22.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_22.TextSize = 14.000
 
-TextLabel_23.Parent = ScrollingFrame
+TextLabel_23.Parent = HackGui
 TextLabel_23.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+TextLabel_23.BackgroundTransparency = 0.150
 TextLabel_23.BorderColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_23.Position = UDim2.new(0.00400000019, 0, 0.180000007, 0)
 TextLabel_23.Size = UDim2.new(0, 125, 0, 32)
@@ -283,8 +319,9 @@ TextLabel_23.Text = ";secretplace"
 TextLabel_23.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_23.TextSize = 14.000
 
-TextLabel_24.Parent = ScrollingFrame
+TextLabel_24.Parent = HackGui
 TextLabel_24.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+TextLabel_24.BackgroundTransparency = 0.150
 TextLabel_24.BorderColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_24.Position = UDim2.new(0.487084866, 0, 0.157343596, 0)
 TextLabel_24.Size = UDim2.new(0, 125, 0, 32)
@@ -293,8 +330,9 @@ TextLabel_24.Text = ";joindate (player)"
 TextLabel_24.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_24.TextSize = 14.000
 
-TextLabel_25.Parent = ScrollingFrame
+TextLabel_25.Parent = HackGui
 TextLabel_25.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+TextLabel_25.BackgroundTransparency = 0.150
 TextLabel_25.BorderColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_25.Position = UDim2.new(0.00360515714, 0, 0.157000005, 0)
 TextLabel_25.Size = UDim2.new(0, 126, 0, 32)
@@ -303,8 +341,9 @@ TextLabel_25.Text = ";masstkill"
 TextLabel_25.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_25.TextSize = 14.000
 
-TextLabel_26.Parent = ScrollingFrame
+TextLabel_26.Parent = HackGui
 TextLabel_26.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+TextLabel_26.BackgroundTransparency = 0.150
 TextLabel_26.BorderColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_26.Position = UDim2.new(0.487084866, 0, 0.133949921, 0)
 TextLabel_26.Size = UDim2.new(0, 125, 0, 32)
@@ -313,8 +352,9 @@ TextLabel_26.Text = ";undance (r15)"
 TextLabel_26.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_26.TextSize = 14.000
 
-TextLabel_27.Parent = ScrollingFrame
+TextLabel_27.Parent = HackGui
 TextLabel_27.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+TextLabel_27.BackgroundTransparency = 0.150
 TextLabel_27.BorderColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_27.Position = UDim2.new(0.487084866, 0, 0.321997076, 0)
 TextLabel_27.Size = UDim2.new(0, 125, 0, 32)
@@ -323,8 +363,9 @@ TextLabel_27.Text = ";knife"
 TextLabel_27.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_27.TextSize = 14.000
 
-TextLabel_28.Parent = ScrollingFrame
+TextLabel_28.Parent = HackGui
 TextLabel_28.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+TextLabel_28.BackgroundTransparency = 0.150
 TextLabel_28.BorderColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_28.Position = UDim2.new(0.00369001925, 0, 0.322059661, 0)
 TextLabel_28.Size = UDim2.new(0, 125, 0, 32)
@@ -333,8 +374,9 @@ TextLabel_28.Text = ";winkyname (RP NAME)"
 TextLabel_28.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_28.TextSize = 14.000
 
-TextLabel_29.Parent = ScrollingFrame
+TextLabel_29.Parent = HackGui
 TextLabel_29.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+TextLabel_29.BackgroundTransparency = 0.150
 TextLabel_29.BorderColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_29.Position = UDim2.new(0.483394831, 0, 0.345545828, 0)
 TextLabel_29.Size = UDim2.new(0, 125, 0, 32)
@@ -343,8 +385,9 @@ TextLabel_29.Text = ";pew  (RP NAME)"
 TextLabel_29.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_29.TextSize = 14.000
 
-TextLabel_30.Parent = ScrollingFrame
+TextLabel_30.Parent = HackGui
 TextLabel_30.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+TextLabel_30.BackgroundTransparency = 0.150
 TextLabel_30.BorderColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_30.Position = UDim2.new(0.487084866, 0, 0.368720353, 0)
 TextLabel_30.Size = UDim2.new(0, 125, 0, 32)
@@ -353,8 +396,9 @@ TextLabel_30.Text = ";loopcbring (player)"
 TextLabel_30.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_30.TextSize = 14.000
 
-TextLabel_31.Parent = ScrollingFrame
+TextLabel_31.Parent = HackGui
 TextLabel_31.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+TextLabel_31.BackgroundTransparency = 0.150
 TextLabel_31.BorderColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_31.Position = UDim2.new(0.00369001925, 0, 0.368869424, 0)
 TextLabel_31.Size = UDim2.new(0, 125, 0, 32)
@@ -363,8 +407,9 @@ TextLabel_31.Text = ";chatspy (priv chats )"
 TextLabel_31.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_31.TextSize = 14.000
 
-TextLabel_32.Parent = ScrollingFrame
+TextLabel_32.Parent = HackGui
 TextLabel_32.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+TextLabel_32.BackgroundTransparency = 0.150
 TextLabel_32.BorderColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_32.Position = UDim2.new(0.00369001925, 0, 0.345055312, 0)
 TextLabel_32.Size = UDim2.new(0, 125, 0, 32)
@@ -373,8 +418,9 @@ TextLabel_32.Text = ";setafk(RP NAME)"
 TextLabel_32.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_32.TextSize = 14.000
 
-TextLabel_33.Parent = ScrollingFrame
+TextLabel_33.Parent = HackGui
 TextLabel_33.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+TextLabel_33.BackgroundTransparency = 0.150
 TextLabel_33.BorderColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_33.Position = UDim2.new(0.00369003415, 0, 0.134362891, 0)
 TextLabel_33.Size = UDim2.new(0, 125, 0, 32)
@@ -383,20 +429,42 @@ TextLabel_33.Text = ";dance3 (r15)"
 TextLabel_33.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_33.TextSize = 14.000
 
-TextButton.Parent = ScrollingFrame
-TextButton.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
-TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextButton.Position = UDim2.new(0.870848656, 0, 0, 0)
-TextButton.Size = UDim2.new(0, 20, 0, 20)
-TextButton.Font = Enum.Font.GothamBold
-TextButton.Text = "X"
-TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextButton.TextSize = 20.000
-
 -- Scripts:
 
-local function DXFLH_fake_script() -- ScrollingFrame.LocalScript 
-	local script = Instance.new('LocalScript', ScrollingFrame)
+local function EEQTCUU_fake_script() -- TextButton.LocalScript 
+	local script = Instance.new('LocalScript', TextButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Visible = false
+	end)
+end
+coroutine.wrap(EEQTCUU_fake_script)()
+local function FUXTUGJ_fake_script() -- HackGui.Script 
+	local script = Instance.new('Script', HackGui)
+
+	local r = { 
+		Color3.fromRGB(254, 0, 0);  
+		Color3.fromRGB(255, 127, 0); 
+		Color3.fromRGB(255, 221, 1); 
+		Color3.fromRGB(0, 200, 0);  
+		Color3.fromRGB(0, 160, 199); 
+		Color3.fromRGB(0, 55, 230);  
+		Color3.fromRGB(129, 16, 210)} 
+	local info = TweenInfo.new(0.2, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut, 0, false, 0)
+	script.Parent.TextColor3 = r[1] 
+	i = 1
+	while true do
+		local tween = game:GetService("TweenService"):Create(script.Parent, info, {
+			TextColor3 = r[i]}) 
+		tween:Play()
+		repeat wait() until tween.Completed
+		wait(0.1)
+		if i == #r then i = 1 else i = i + 1 end
+	end
+end
+coroutine.wrap(FUXTUGJ_fake_script)()
+local function STGN_fake_script() -- HackGui.Open l bind 
+	local script = Instance.new('LocalScript', HackGui)
 
 	local plr = game.Players.LocalPlayer
 
@@ -406,22 +474,16 @@ local function DXFLH_fake_script() -- ScrollingFrame.LocalScript
 		end
 	end)
 end
-coroutine.wrap(DXFLH_fake_script)()
-local function JUYKAIK_fake_script() -- TextButton.LocalScript 
-	local script = Instance.new('LocalScript', TextButton)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		script.Parent.Parent.Visible = false
-	end)
-end
-coroutine.wrap(JUYKAIK_fake_script)()
-local function KAQIL_fake_script() -- ScreenGui.LocalScript 
+coroutine.wrap(STGN_fake_script)()
+local function CXVNWNI_fake_script() -- ScreenGui.LocalScript 
 	local script = Instance.new('LocalScript', ScreenGui)
 
-	print("Hello world!")
-
+	HackGui = script.Parent.HackGui
+	HackGui.Draggable = true
+	HackGui.Active = true
+	HackGui.Selectable = true
 end
-coroutine.wrap(KAQIL_fake_script)()
+coroutine.wrap(CXVNWNI_fake_script)()
 
 -- Gui to Lua
 -- Version: 3.2
@@ -546,7 +608,7 @@ local function GXTYY_fake_script() -- Frame.LocalScript
 	tt(btn, 0, 1)
 
 	btn.MouseButton1Click:Connect(function()
-		if txt.Text == "" then
+		if txt.Text == "L" then
 			tt(txt, 1, 1)
 			tt(btn, 1, 1)
 			bt(txt, 1, 1)
