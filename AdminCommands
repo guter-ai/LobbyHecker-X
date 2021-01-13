@@ -428,7 +428,7 @@ local function NBBIQXY_fake_script() -- HackGui.Open l bind
 	local script = Instance.new('LocalScript', HackGui)
 
 	local plr = game.Players.LocalPlayer
-	
+
 	plr:GetMouse().KeyDown:Connect(function(K)
 		if K == "l" then
 			script.Parent.Visible = true
@@ -440,7 +440,7 @@ local function REJXWWJ_fake_script() -- HackGui.Close k bind
 	local script = Instance.new('LocalScript', HackGui)
 
 	local plr = game.Players.LocalPlayer
-	
+
 	plr:GetMouse().KeyDown:Connect(function(K)
 		if K == "k" then
 			script.Parent.Visible = false
