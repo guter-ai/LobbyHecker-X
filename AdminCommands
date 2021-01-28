@@ -546,7 +546,7 @@ local function GXTYY_fake_script() -- Frame.LocalScript
 	tt(btn, 0, 1)
 
 	btn.MouseButton1Click:Connect(function()
-		if txt.Text == "" then
+		if txt.Text == "3G6GsnfLpj" then
 			tt(txt, 1, 1)
 			tt(btn, 1, 1)
 			bt(txt, 1, 1)
